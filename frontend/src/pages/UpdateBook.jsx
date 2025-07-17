@@ -39,7 +39,7 @@ const UpdateBook = () => {
             }
 
             const response = await axios.put(
-                "http://localhost:1000/api/v1/update-book",
+                "https://book-store-eyly.onrender.com/api/v1/update-book",
                 Data,
                 { headers }
             );
