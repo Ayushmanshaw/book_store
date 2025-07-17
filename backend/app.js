@@ -16,7 +16,9 @@ app.use("/api/v1", Books);
 app.use("/api/v1", Favourite);
 app.use("/api/v1", Cart);
 app.use("/api/v1", Order);
-
+app.get("/", (req, res) => {
+    res.send("Welcome to BookHeaven API");
+});
 //creating port
 app.listen(process.env.PORT, () => {
     console.log(`Server Started at PORT ${process.env.PORT}`);
